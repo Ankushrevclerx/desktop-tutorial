@@ -1,0 +1,15 @@
+<suite name="Suite">
+
+
+	<listerners>
+		<listerner class-name="com.Listner.ITestListnerr" />
+	</listerners>
+
+	<test thread-count="1" name="Test">
+		<classes>
+			<class name="com.TestRunner.TestRun" />
+		<class name="com.TestRunner.TestRunrerun" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
