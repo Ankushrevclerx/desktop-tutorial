@@ -14,7 +14,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.internal.annotations.BeforeSuiteAnnotation;
 
-import com.Base.Base;
+
 import com.github.mkolisnyk.cucumber.runner.BeforeSubSuite;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
@@ -50,14 +50,14 @@ import gherkin.ast.Feature;
         outputFolder = "target/cucumber-reports/extended-report")
 
 @CucumberOptions(
-		features="G:\\RamProject\\CucumberProject\\src\\test\\resources",
+		features="G:\\RamProject\\JenkinWithCucumber\\desktop-tutorial\\CucumberProject\\src\\test\\resources",
 		glue= {"stepprocess"},
 		dryRun=false,
 		monochrome=true,
 		plugin= {"pretty","html:test-output1","rerun:target/rerun.txt"}
 		
 		)
-@Listeners({com.Listner.ITestListnerr.class})
+
 public class TestRun extends AbstractTestNGCucumberTests  {
 	
 	private TestNGCucumberRunner testNGCucumberRunner;
@@ -69,13 +69,13 @@ public class TestRun extends AbstractTestNGCucumberTests  {
 
     @Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "datafetch")
     public void feature(String name, String pass, String io) {
-    	Base.username=name;
-    	Base.password=pass;
+    	//Base.username=name;
+    	//Base.password=pass;
     	//System.out.println(cucumberFeature[0]);
     //	System.out.println(cucumberFeature[1]);
     	//System.out.println(((CucumberFeatureWrapper)testNGCucumberRunner.provideFeatures()[0][0]).getCucumberFeature());
     	//System.out.println(cucumberFeature.getCucumberFeature());
-    testNGCucumberRunner.runCucumber(((CucumberFeatureWrapper)testNGCucumberRunner.provideFeatures()[0][0]).getCucumberFeature());
+  /*  testNGCucumberRunner.runCucumber(((CucumberFeatureWrapper)testNGCucumberRunner.provideFeatures()[0][0]).getCucumberFeature());
     	
     	
     }
@@ -160,7 +160,7 @@ for (JsonElement jsonElement : datainarray) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	return datas;
+	return datas;*/
 		
 	}
 	

@@ -161,5 +161,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar"/>
 	<classpathentry kind="var" path="M2_REPO/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

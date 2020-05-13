@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.TestRunner.Practice">
+      <class name="com.TestRunner.TestRun">
         <methods>
-          <include name="alert"/>
+          <include name="tearDownClass"/>
+          <include name="feature"/>
+          <include name="feature"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- com.TestRunner.Practice -->
+      </class> <!-- com.TestRunner.TestRun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
