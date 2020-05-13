@@ -50,7 +50,7 @@ import gherkin.ast.Feature;
         outputFolder = "target/cucumber-reports/extended-report")
 
 @CucumberOptions(
-		features="G:\\RamProject\\JenkinWithCucumber\\desktop-tutorial\\CucumberProject\\src\\test\\resources",
+		features="./src/test/resources",
 		glue= {"stepprocess"},
 		dryRun=false,
 		monochrome=true,
