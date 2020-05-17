@@ -22,6 +22,12 @@ public class Helper {
 				wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(framenum));
 			}
 			
+			public void loadForFirstFrame()
+			{
+				WebDriverWait wait=new WebDriverWait(driver, 40);
+				wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("//iframe[1]"));
+			}
+			
 			
 			public boolean waitForElement(WebElement xpath)
 			{
@@ -46,4 +52,36 @@ public class Helper {
 				return true;
 			}
 			}
+			
+			
+			
+			
+			public boolean waituntilElementClickable(WebElement xpath)
+			{
+				int flag=0;
+				try
+				{
+					WebDriverWait wait=new WebDriverWait(driver, 30);
+					wait.until(ExpectedConditions.elementToBeClickable(xpath));
+					
+				}
+				catch (Exception e) {
+					// TODO: handle exception
+					flag=1;
+					
+				}
+			if(flag==1)	
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+			}
+			
+			
+			
+			
+			
 }

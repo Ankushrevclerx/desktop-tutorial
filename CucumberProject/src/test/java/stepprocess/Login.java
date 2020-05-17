@@ -39,9 +39,9 @@ public class Login extends Base{
 	
 	List<String> scenarioName=new ArrayList<String>();
 
-	@Before
-	public void setup(Scenario sec) {
-		/*System.out.println("inside login");
+//	@Before
+//	public void setup(Scenario sec) {
+	/*System.out.println("inside login");
 		if(scenarioName.contains(sec.getName()))
 		{
 			mailflag=true;
@@ -65,20 +65,20 @@ public class Login extends Base{
 			Base.feature = Base.extent.createTest(Feature.class, finalFeaturename);
 
 		}*/
-		System.setProperty("webdriver.chrome.driver",
-				"G:\\RamProject\\criticaltest\\MindMatrix_CriticalTestCases\\MindMatrix_CriticalTestCases\\Drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver",
+			//	"G:\\RamProject\\criticaltest\\MindMatrix_CriticalTestCases\\MindMatrix_CriticalTestCases\\Drivers\\chromedriver.exe");
+		//driver = new ChromeDriver();
 
 		//test = feature.createNode(sec.getName());
 
-	}
+	//}
 
-	@After
-	public void cleanUp(Scenario sec) {
-		System.out.println(sec.getName() + "ended---");
-		driver.quit();
-
-	}
+//	@After
+//	public void cleanUp(Scenario sec) {
+//		System.out.println(sec.getName() + "ended---");
+//		driver.quit();
+//
+//	}
 //	
 
 	@When("^user open url \"(.*?)\"$")
