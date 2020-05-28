@@ -2,13 +2,13 @@ Feature: Login
 
   #This is how background can be used to eliminate duplicate steps
   Background: 
-    When user open url "https://unitedpartners.ca"
-    And user enter user name "pkumar" and password as "piyush@999"
+    When user open url "google.com"
+    And user enter user name "dumy" and password as "dumy@999"
     Then Dashbord should be apperaed
 
   @RegressionTest 
   Scenario: Creating opportunity Type and verify it is created sucessfully.
-    Given User is at Opportunity Custom Field with url "https://unitedpartners.ca/#setup/opportunity"
+    Given User is at Opportunity Custom Field with url "https://google.com"
     When click on create button
     Then create opportunity window page should be open
     And Type opportunity name as "withoutcustvcc"
@@ -21,7 +21,7 @@ Feature: Login
     
     @RegressionTest 
     Scenario: Creating opportunity after click on step process checkbox
-     Given User is at Opportunity Custom Field with url "https://unitedpartners.ca/#setup/opportunity"
+     Given User is at Opportunity Custom Field with url "google.com"
     When click on create button
      Then create opportunity window page should be open
     And Type opportunity name as "opportunitywithstep"
