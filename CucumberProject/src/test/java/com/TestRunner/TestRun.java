@@ -50,7 +50,7 @@ import gherkin.ast.Feature;
 //        outputFolder = "target/cucumber-reports/extended-report")
 
 @CucumberOptions(
-		features="./src/test/resources/LoginAMP.feature",
+		features="./src/test/resources/Emailmodule.feature",
 		glue= {"stepprocess"},
 		dryRun=false,
 		monochrome=true,
