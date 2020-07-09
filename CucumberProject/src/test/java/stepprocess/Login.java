@@ -93,10 +93,10 @@ public class Login extends Base{
 	@And("^user enter user name \"(.*?)\" and password as \"(.*?)\"$")
 	public void user_enter_user_name_and_password_as(String username, String password) throws Throwable {
 		//test.createNode(new GherkinKeyword("And"), "user enter user name" + username + " and password " + password);
-		aa.username(username);
-		aa.password(System.getenv("variable"));
+		aa.username(System.getenv("AMPUSER"));
+		aa.password(System.getenv("AMPPASSWORD"));
 		dashbord = aa.loginButton();
-
+		
 	}
 
 	@Then("^Dashbord should be apperaed$")
