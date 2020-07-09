@@ -94,7 +94,7 @@ public class Login extends Base{
 	public void user_enter_user_name_and_password_as(String username, String password) throws Throwable {
 		//test.createNode(new GherkinKeyword("And"), "user enter user name" + username + " and password " + password);
 		aa.username(username);
-		aa.password(password);
+		aa.password(System.getenv("variable"));
 		dashbord = aa.loginButton();
 
 	}

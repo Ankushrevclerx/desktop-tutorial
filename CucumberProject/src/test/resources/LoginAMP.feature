@@ -2,7 +2,7 @@ Feature: Login
 
   #This is how background can be used to eliminate duplicate steps
   Background: 
-    When user open url "google.com"
+    When user open url "https://dvl-master.amp.vg/login"
     And user enter user name "dumy" and password as "dumy@999"
     Then Dashbord should be apperaed
 
