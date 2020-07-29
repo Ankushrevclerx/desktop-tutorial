@@ -53,10 +53,11 @@ import gherkin.ast.Feature;
 		features="./src/test/resources/Emailmodule.feature",
 		glue= {"stepprocess"},
 		dryRun=false,
-		monochrome=true
+		monochrome=true,
+		 plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/report.html"})
 		//plugin= {"pretty","html:test-output1","rerun:target/rerun.txt"}
 		
-		)
+		
 
 public class TestRun  {
 //	
