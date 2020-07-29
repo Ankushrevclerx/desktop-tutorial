@@ -53,8 +53,8 @@ import gherkin.ast.Feature;
 		features="./src/test/resources/Emailmodule.feature",
 		glue= {"stepprocess"},
 		dryRun=false,
-		monochrome=true,
-		plugin= {"pretty","html:test-output1","rerun:target/rerun.txt"}
+		monochrome=true
+		//plugin= {"pretty","html:test-output1","rerun:target/rerun.txt"}
 		
 		)
 
